@@ -1,6 +1,21 @@
+import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 export default function ScanBikeCode() {
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
+
+  const findBikeByBarcode = async (barcode) => {
+    try {
+      const response = await axios.get("/api/v1/bike/barcode", {
+        params: { barcode },
+      });
+      navigate("/bike/" + response.data.bike.id);
+    } catch (e) {
+      alert(e.response.data.message);
+    }
+  };
+
   return (
     <div>
       <h1 className="text-4xl font-semibold text-center my-10">
@@ -11,10 +26,7 @@ export default function ScanBikeCode() {
         alt=""
         className="mx-auto"
       />
-      <form
-        className="relative w-1/3 mx-auto mt-10"
-        action={search.trim() !== "" ? "/bike/" + search : "#"}
-      >
+      <div className="relative w-1/3 mx-auto mt-10">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,12 +44,17 @@ export default function ScanBikeCode() {
           </svg>
         </div>
         <input
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              findBikeByBarcode(search);
+            }
+          }}
           onChange={(ev) => setSearch(ev.target.value)}
           type="text"
           className="bg-gray-50 border border-gray-300 text-gray-900  rounded-full focus:ring-blue-500 focus:border-blue-500 block w-full px-10 py-2 sm:py-2"
-          placeholder="Search for bike..."
+          placeholder="Enter barcode..."
         />
-      </form>
+      </div>
     </div>
   );
 }

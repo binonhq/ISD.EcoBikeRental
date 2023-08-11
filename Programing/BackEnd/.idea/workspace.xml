@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="815d7eb2-6525-4e94-a4bf-203c4e7d9667" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/EcoBikeRentalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/EcoBikeRentalApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/BikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/BikeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/StationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/CreditCardInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/CreditCardInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/GetListBikeByStationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/GetListBikeByStationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/entity/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/entity/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/respository/CreditCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/respository/CreditCardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/StationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/StationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/BikeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/BikeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/StationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/StationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -57,12 +47,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Code/ISD.EcoBikeRental/Programing/BackEnd/demoBe/pom.xml",
+    "last_opened_file_path": "E:/Code/ISD.EcoBikeRental/Programing/BackEnd/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "configurable.group.appearance",
+    "spring.configuration.checksum": "f1f03e47c0a3892a7c63e92fac81e410",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -99,6 +90,7 @@
       <updated>1691779649599</updated>
       <workItem from="1691779650750" duration="7480000" />
       <workItem from="1691789534470" duration="93000" />
+      <workItem from="1691790106817" duration="475000" />
     </task>
     <servers />
   </component>
