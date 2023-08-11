@@ -41,6 +41,8 @@ export default function PaymentPage() {
       })
       .then((response) => {
         alert(response.data.message);
+        localStorage.removeItem("bikeId");
+        localStorage.removeItem("stationId");
         navigate("/");
       })
       .catch((e) => {
