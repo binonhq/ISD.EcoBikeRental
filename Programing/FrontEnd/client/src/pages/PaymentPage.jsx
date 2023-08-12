@@ -41,6 +41,8 @@ export default function PaymentPage() {
       })
       .then((response) => {
         alert(response.data.message);
+        localStorage.removeItem("bikeId")
+        localStorage.removeItem("stationId")
         navigate("/");
       })
       .catch((e) => {
@@ -96,7 +98,7 @@ export default function PaymentPage() {
           onChange={(ev) => setExpDate(ev.target.value)}
           className="border-2 px-2 py-1 rounded-xl mb-2 w-full"
         />
-        <h1 className="font-semibold text-xl">Security code</h1>
+        <h1 className="font-semibold text-xl">CVV code</h1>
         <input
           type="password"
           placeholder="•••"

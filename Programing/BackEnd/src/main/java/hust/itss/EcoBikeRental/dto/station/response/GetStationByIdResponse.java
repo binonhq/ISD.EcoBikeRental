@@ -1,4 +1,4 @@
-package hust.itss.EcoBikeRental.dto.station;
+package hust.itss.EcoBikeRental.dto.station.response;
 
 import hust.itss.EcoBikeRental.entity.Station;
 import lombok.Data;

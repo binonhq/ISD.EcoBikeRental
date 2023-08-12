@@ -1,7 +1,7 @@
 package hust.itss.EcoBikeRental.service.impl;
 
-import hust.itss.EcoBikeRental.dto.station.GetListStationResponse;
-import hust.itss.EcoBikeRental.dto.station.GetStationByIdResponse;
+import hust.itss.EcoBikeRental.dto.station.response.GetListStationResponse;
+import hust.itss.EcoBikeRental.dto.station.response.GetStationByIdResponse;
 import hust.itss.EcoBikeRental.entity.Station;
 import hust.itss.EcoBikeRental.respository.StationRepository;
 import hust.itss.EcoBikeRental.service.StationService;

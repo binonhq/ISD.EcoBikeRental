@@ -1,27 +1,8 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { RentContext } from "../RentContext";
 import axios from "axios";
 export default function RentalPage() {
-  // const rental = null;
-  // const rental = {
-  //   bike: {
-  //     id: 1,
-  //     type: "Electric bike",
-  //     station: "Truong Dinh",
-  //     name: "bike",
-  //     price: 3,
-  //     range: 100,
-  //     speed: 10,
-  //     power: 300,
-  //     img: "https://www.emw.gr/thumbnails/32/1/fpgal_747/resize/0/255.255.255/700x700/1665667120_0_Sxedio-xoris-titlo.png/format.webp",
-  //     battery: 90,
-  //     time: 2,
-  //   },
-  //   startTime: "12:00:00",
-  // };
 
-  // const { rental, setRental } = useContext(RentContext);
   const rentalBikeId = localStorage.getItem("bikeId");
   const [bike, setBike] = useState(null);
   useEffect(() => {

@@ -1,6 +1,8 @@
 package hust.itss.EcoBikeRental.service.impl;
 
 import hust.itss.EcoBikeRental.dto.bike.*;
+import hust.itss.EcoBikeRental.dto.bike.request.ReturnBikeRequest;
+import hust.itss.EcoBikeRental.dto.bike.response.*;
 import hust.itss.EcoBikeRental.entity.Bike;
 import hust.itss.EcoBikeRental.entity.CreditCard;
 import hust.itss.EcoBikeRental.entity.Station;
@@ -17,6 +19,8 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public class BikeServiceImpl implements BikeService {
@@ -60,6 +64,24 @@ public class BikeServiceImpl implements BikeService {
 
         if (stationDoc.isEmpty()) {
             return new ReturnBikeResponse(HttpStatus.NOT_FOUND, "Station " + request.getStationId() + " not found");
+        }
+
+        String regex = "^(0[1-9]|1[0-2])\\/(\\d{2})$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(request.getCreditCardInfo().getExpDate());
+
+        if(!matcher.matches()) {
+            return new ReturnBikeResponse(HttpStatus.BAD_REQUEST, "Exp date is invalid");
+        }
+
+        int month = Integer.parseInt(matcher.group(1));
+
+        if(month < 1 || month > 12) {
+            return new ReturnBikeResponse(HttpStatus.BAD_REQUEST, "Exp date month is invalid");
+        }
+
+        if(!request.getCreditCardInfo().getCode().matches("^\\d{3}$")) {
+            return new ReturnBikeResponse(HttpStatus.BAD_REQUEST, "Cvv code is invalid");
         }
 
         CreditCard creditCard = creditCardRepository.findByCardHolderAndCardCodeAndCodeAndExpDate(request.getCreditCardInfo().getCardHolder(), request.getCreditCardInfo().getCardCode(), request.getCreditCardInfo().getCode(), request.getCreditCardInfo().getExpDate());
@@ -115,6 +137,24 @@ public class BikeServiceImpl implements BikeService {
 
     @Override
     public RentBikeResponse rentBike(String id, CreditCardInfo request) {
+        String regex = "^(0[1-9]|1[0-2])\\/(\\d{2})$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(request.getExpDate());
+
+        if(!matcher.matches()) {
+            return new RentBikeResponse(HttpStatus.BAD_REQUEST, "Exp date is invalid");
+        }
+
+        int month = Integer.parseInt(matcher.group(1));
+
+        if(month < 1 || month > 12) {
+            return new RentBikeResponse(HttpStatus.BAD_REQUEST, "Exp date month is invalid");
+        }
+
+        if(!request.getCode().matches("^\\d{3}$")) {
+            return new RentBikeResponse(HttpStatus.BAD_REQUEST, "Cvv code is invalid");
+        }
+
         CreditCard creditCard = creditCardRepository.findByCardHolderAndCardCodeAndCodeAndExpDate(request.getCardHolder(), request.getCardCode(), request.getCode(), request.getExpDate());
         System.out.println(creditCard);
 

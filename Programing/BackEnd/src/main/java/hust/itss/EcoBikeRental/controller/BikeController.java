@@ -1,6 +1,8 @@
 package hust.itss.EcoBikeRental.controller;
 
 import hust.itss.EcoBikeRental.dto.bike.*;
+import hust.itss.EcoBikeRental.dto.bike.request.ReturnBikeRequest;
+import hust.itss.EcoBikeRental.dto.bike.response.*;
 import hust.itss.EcoBikeRental.service.BikeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

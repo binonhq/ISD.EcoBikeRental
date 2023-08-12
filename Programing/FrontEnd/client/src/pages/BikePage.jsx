@@ -67,9 +67,6 @@ export default function BikePage() {
             Bar Code: {bike.barcode}
           </h1>
           <h1 className="text-2xl font-semibold py-2">Type: {bike.type}</h1>
-          {/* <h1 className="text-2xl font-semibold py-2">
-            Deposit: {bike.price ? bike.price : null}
-          </h1> */}
           <h1 className="text-2xl font-semibold py-2">
             Battery: {bike.battery}%
           </h1>
@@ -93,7 +90,7 @@ export default function BikePage() {
           placeholder="Your name"
           className="border-2 px-2 py-1 rounded-xl mb-2 w-full"
         />
-        <h1 className="font-semibold text-xl">Expiration Date (MMYY)</h1>
+        <h1 className="font-semibold text-xl">Expiration Date (MM/YY)</h1>
         <input
           type="text"
           value={expDate}
@@ -101,7 +98,7 @@ export default function BikePage() {
           placeholder="Exp date"
           className="border-2 px-2 py-1 rounded-xl mb-2 w-full"
         />
-        <h1 className="font-semibold text-xl">Security code</h1>
+        <h1 className="font-semibold text-xl">CVV code</h1>
         <input
           type="password"
           value={code}
