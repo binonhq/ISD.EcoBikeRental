@@ -1,5 +1,5 @@
 export default function Bike(bike) {
-  // console.log(bike);
+  console.log(bike);
   bike = bike.bike;
   return (
     <div className="bg-white px-9 pb-8 rounded-2xl border-2 border-white hover:border-stone-800  duration-300">
@@ -20,15 +20,15 @@ export default function Bike(bike) {
       </div>
       <div className="grid grid-cols-4">
         <div className="text-2xl capitalize">
-          <h1 className="text-stone-400">Range</h1>
-          <h1>{bike.range}mil</h1>
+          <h1 className="text-stone-400">Color</h1>
+          <h1>{bike.color}</h1>
         </div>
         <div className="text-2xl capitalize">
           <h1 className="text-stone-400">Speed</h1>
           <h1>{bike.speed}kmh</h1>
         </div>
         <div className="text-2xl capitalize">
-          <h1 className="text-stone-400">Power</h1>
+          <h1 className="text-stone-400">Battery</h1>
           <h1>{bike.battery}%</h1>
         </div>
         <div className="bg-green-400 ml-10 w-16 h-16 rounded-2xl">
