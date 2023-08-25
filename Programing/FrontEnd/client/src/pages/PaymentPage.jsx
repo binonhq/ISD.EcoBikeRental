@@ -1,6 +1,5 @@
-import { useState, useEffect, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { RentContext } from "../RentContext";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
 
@@ -41,8 +40,8 @@ export default function PaymentPage() {
       })
       .then((response) => {
         alert(response.data.message);
-        localStorage.removeItem("bikeId")
-        localStorage.removeItem("stationId")
+        localStorage.removeItem("bikeId");
+        localStorage.removeItem("stationId");
         navigate("/");
       })
       .catch((e) => {
