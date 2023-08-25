@@ -5,10 +5,6 @@ import axios from "axios";
 
 export default function StationPage() {
   const { id } = useParams();
-<<<<<<< HEAD
-
-=======
->>>>>>> 7ba75dc890f3f1584b60e8a86f99343b6db33f68
   const [bikes, setBikes] = useState([]);
   const [station, setStation] = useState({});
 
@@ -22,7 +18,7 @@ export default function StationPage() {
       .catch((e) => {
         console.log(e);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div className="px-36 flex justify-between">
@@ -83,7 +79,7 @@ export default function StationPage() {
             className="h-7"
           />
           <h1 className="text-stone-900 text-xl font-semibold">
-            Available: {station.bikes.length} bikes
+            Available: {bikes.length} bikes
           </h1>
         </div>
         <div className="flex gap-2 px-20 py-3">

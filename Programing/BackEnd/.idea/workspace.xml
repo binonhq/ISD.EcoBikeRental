@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="815d7eb2-6525-4e94-a4bf-203c4e7d9667" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/BikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/BikeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/StationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/controller/StationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/GetBikeByBarcodeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/response/GetBikeByBarcodeResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/GetBikeByIdResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/response/GetBikeByIdResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/GetListBikeByStationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/response/GetListBikeByStationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/RentBikeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/response/RentBikeResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/ReturnBikeRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/request/ReturnBikeRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/ReturnBikeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/bike/response/ReturnBikeResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/station/GetListStationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/station/response/GetListStationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/station/GetStationByIdResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/dto/station/response/GetStationByIdResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/BikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/BikeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/StationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/StationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/BikeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/BikeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/StationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hust/itss/EcoBikeRental/service/impl/StationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/client/src/pages/BikePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/client/src/pages/BikePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/client/src/pages/PaymentPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/client/src/pages/PaymentPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/client/src/pages/RentalPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/client/src/pages/RentalPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FrontEnd/client/src/pages/StationPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/client/src/pages/StationPage.jsx" afterDir="false" />
-=======
->>>>>>> 7ba75dc890f3f1584b60e8a86f99343b6db33f68
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,26 +38,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/HUST/2022.2/ITSS Software Development/ISD.EcoBikeRental/Programing/BackEnd/pom.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f1f03e47c0a3892a7c63e92fac81e410&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -89,17 +48,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/Code/ISD.EcoBikeRental/Programing/BackEnd/pom.xml",
+    "last_opened_file_path": "E:/HUST/2022.2/ITSS Software Development/ISD.EcoBikeRental/Programing/BackEnd/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3923611",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "f1f03e47c0a3892a7c63e92fac81e410",
     "vue.rearranger.settings.migration": "true"
->>>>>>> 7ba75dc890f3f1584b60e8a86f99343b6db33f68
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="demoBe" />
@@ -133,15 +94,11 @@
       <updated>1691779649599</updated>
       <workItem from="1691779650750" duration="7480000" />
       <workItem from="1691789534470" duration="93000" />
-<<<<<<< HEAD
       <workItem from="1691790132579" duration="59000" />
       <workItem from="1691790857062" duration="160000" />
       <workItem from="1691791038769" duration="101000" />
       <workItem from="1691822486909" duration="699000" />
       <workItem from="1691825259637" duration="1774000" />
-=======
-      <workItem from="1691790106817" duration="475000" />
->>>>>>> 7ba75dc890f3f1584b60e8a86f99343b6db33f68
     </task>
     <servers />
   </component>
