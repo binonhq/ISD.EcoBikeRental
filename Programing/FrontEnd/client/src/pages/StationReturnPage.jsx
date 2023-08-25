@@ -1,11 +1,9 @@
-import { useState, useContext, useEffect } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
-import { RentContext } from "../RentContext";
+import { useState, useEffect } from "react";
+import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 
 export default function StationReturnPage() {
   const [search, setSearch] = useState("");
-  const [redirect, setRedirect] = useState("");
   const [stations, setStations] = useState([]);
 
   useEffect(() => {

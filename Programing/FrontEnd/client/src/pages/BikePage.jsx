@@ -1,7 +1,6 @@
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { RentContext } from "../RentContext";
 
 export default function BikePage() {
   const { id } = useParams();
@@ -11,7 +10,6 @@ export default function BikePage() {
   const [code, setCode] = useState("");
   const [redirect, setRedirect] = useState("");
   const [bike, setBike] = useState({});
-  const { setRent } = useContext(RentContext);
   useEffect(() => {
     axios
       .get("/api/v1/bike/" + id)

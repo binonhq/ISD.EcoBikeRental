@@ -10,11 +10,9 @@ import ScanBikePage from "./pages/ScanBikePage";
 import StationReturnPage from "./pages/StationReturnPage";
 import PaymentPage from "./pages/PaymentPage";
 import axios from "axios";
-import { RentContextProvider } from "./RentContext";
 axios.defaults.baseURL = "http://localhost:4000";
 function App() {
   return (
-    <RentContextProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<IndexPage />} />
@@ -35,7 +33,6 @@ function App() {
           <Route path="/payment" element={<PaymentPage />} />
         </Route>
       </Routes>
-    </RentContextProvider>
   );
 }
 
